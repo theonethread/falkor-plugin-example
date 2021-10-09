@@ -1,0 +1,15 @@
+{
+  "terminal": {
+    "ansi": true,
+    "animation": true
+  },
+  "logger": {
+    "level": 0,
+    "timestamp": true
+  },
+  "brand": {
+    "fancy": true,
+    "quote": true
+  },
+  "theme": {}
+}
