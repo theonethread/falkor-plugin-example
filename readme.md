@@ -1,6 +1,4 @@
-# **[Falkor] Task Example**
-
-[TOC]
+# **Falkor Plugin Example**
 
 ## **Install**
 

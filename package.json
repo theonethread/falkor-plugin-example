@@ -1,5 +1,5 @@
 {
-  "name": "@falkor/falkor-task-example",
+  "name": "@falkor/falkor-plugin-example",
   "version": "0.1.0",
   "description": "Framework Demo",
   "author": "Barnabas Bucsy (https://github.com/theonethread)",
@@ -7,6 +7,7 @@
   "private": true,
   "keywords": [
     "falkor",
+    "plugin",
     "task",
     "example"
   ],
