@@ -1,15 +1,13 @@
 # **Falkor Plugin Example**
 
-## **Install**
+```javascript
+// Work In Progress
+```
 
-To install the project, run `npm install` in the root. This will install all dependencies, including the `falkor-bundler`, and `falkor-library` modules from parent directory (temporary workaround for development).
+## **Development**
 
-## **Build**
+### **Open Source**
 
-Run `npm run debug` or `npm run release`.
+You can always find the latest sources on [GitHub](https://github.com/theonethread/falkor-plugin-example "Visit").
 
-## **Start**
-
-Run `npm start`.
-
-_©2020-2021 Barnabas Bucsy  - All rights reserved._
+_©2020-2021 Barnabas Bucsy - All rights reserved._
