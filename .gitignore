@@ -3,6 +3,7 @@
 .xcode
 
 .dist
+.doc
 .man
 .types
 .tmp
