@@ -103,4 +103,12 @@ class ExampleTask extends falkor.Task {
     }
 }
 
-export default new ExampleTask();
+// export default new ExampleTask();
+
+// UNSTABLE [!] temporary workaround, TaskRunner won't be exposed to plugins in the future
+(async () => {
+    const app = new falkor.TaskRunner();
+    app.register(new ExampleTask());
+    await app.run();
+    process.exit(0);
+})();
