@@ -31,15 +31,16 @@
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
     "prepublishOnly": "npm run release",
-    "start": "node .dist/index.js"
+    "start": "falkor-commander"
   },
   "devDependencies": {
     "@types/node": "14.17.21",
     "rimraf": "3.0.2",
-    "@falkor/falkor-bundler": "1.1.1"
+    "@falkor/falkor-bundler": "1.1.1",
+    "@falkor/falkor-commander": "file://../falkor-commander"
   },
   "dependencies": {
-    "@falkor/falkor-library": "1.0.0-beta.0"
+    "@falkor/falkor-library": "file://../falkor-library"
   },
   "peerDependencies": {
     "@falkor/falkor-commander": "1.0.0-beta.0"
