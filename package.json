@@ -9,7 +9,8 @@
     "falkor",
     "plugin",
     "task",
-    "example"
+    "example",
+    "@falkor-plugin"
   ],
   "type": "module",
   "main": ".dist/index.js",
