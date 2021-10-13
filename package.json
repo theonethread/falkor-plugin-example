@@ -3,8 +3,12 @@
   "version": "1.0.0-beta.0",
   "description": "Framework Demo",
   "author": "Barnabas Bucsy (https://github.com/theonethread)",
+  "contributors": [
+    "Barnabas Bucsy (https://github.com/theonethread)"
+  ],
   "license": "MIT",
   "private": true,
+  "repository": "github:theonethread/falkor-plugin-example",
   "keywords": [
     "falkor",
     "plugin",
@@ -19,6 +23,10 @@
   "files": [
     ".dist"
   ],
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
   "scripts": {
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
