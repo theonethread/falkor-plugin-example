@@ -37,14 +37,14 @@ class ExampleTask extends falkor.Task {
             this.error("failed fetch");
         }
 
-        // const commitResult = await this.exec("git commit", {
-        //     cwd: "../falkor library",
-        //     // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
-        //     noError: [/nothing to commit, working tree clean/]
-        // });
-        // if (!commitResult.success) {
-        //     this.error("failed commit");
-        // }
+        const commitResult = await this.exec("git commit", {
+            cwd: "../falkor-library",
+            // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
+            noError: [/nothing to commit, working tree clean/]
+        });
+        if (!commitResult.success) {
+            this.error("failed commit");
+        }
 
         // request input from the user
         const answer1 = await this.ask(
