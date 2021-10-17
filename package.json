@@ -2,14 +2,24 @@
   "name": "@falkor/falkor-plugin-example",
   "version": "1.0.0-beta.0",
   "description": "Falkor Commander plugin to demonstrate framework capabilities",
-  "author": "Barnabas Bucsy (https://github.com/theonethread)",
+  "author": {
+    "name": "Barnabas Bucsy",
+    "url": "https://github.com/theonethread"
+  },
   "contributors": [
-    "Barnabas Bucsy (https://github.com/theonethread)"
+    {
+      "name": "Barnabas Bucsy",
+      "url": "https://github.com/theonethread"
+    }
   ],
   "license": "MIT",
   "private": true,
   "repository": "github:theonethread/falkor-plugin-example",
   "homepage": "https://falkor.world/",
+  "funding": {
+    "type": "individual",
+    "url": "https://www.linkedin.com/in/barnabas-bucsy"
+  },
   "keywords": [
     "falkor",
     "plugin",
