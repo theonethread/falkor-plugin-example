@@ -45,7 +45,7 @@
     "start": "falkor-commander"
   },
   "devDependencies": {
-    "@types/node": "14.17.21",
+    "@types/node": "14.17.27",
     "rimraf": "3.0.2",
     "@falkor/falkor-bundler": "1.1.2",
     "@falkor/falkor-commander": "file://../falkor-commander"
