@@ -25,7 +25,7 @@ class ExampleTask extends falkor.Task {
     // necessary implementation of abstract async function (entry point)
     public async run(): Promise<void> {
         const _ = this.theme.tagger;
-        this.logger.info(`[i] Tagged template literal support ${_.scc`is here`} ${_.pth`finally`}!`);
+        this.logger.info(`[i] Tagged template literal support ${_.scs`is here`} ${_.pth`finally`}!`);
 
         // asynchronous command-line execution
         // (command output is handled by library)
@@ -95,7 +95,7 @@ class ExampleTask extends falkor.Task {
             // @see LogLevel
             .info(
                 // inline styling of log chunks is always done through the theme
-                _.scc`${
+                _.scs`${
                     // ascii is a new addition, currently it creates lists, and ascii figlet fonts
                     // (newlines are padded correctly by library, extra one added to the end for readability)
                     this.ascii.font("I'm done", "Big")
