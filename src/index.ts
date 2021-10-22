@@ -87,12 +87,10 @@ class ExampleTask extends falkor.Task {
             .pushPrompt("[NIRVANA]")
             // level of output is based on configuration, one can use:
             // debug(), notice(), info(), warning(), error(), fatal()
-            // @see LogLevel
             .info("luv' this band")
             // prompts also support internal ansi color sequence(s) - if underlying terminal does too
             .pushPrompt(_.trc`nevermind`)
             // (level of output can be overridden in the '.ops.json' file in project root)
-            // @see LogLevel
             .info(
                 // inline styling of log chunks is always done through the theme
                 _.scs`${
