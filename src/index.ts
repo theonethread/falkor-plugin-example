@@ -24,6 +24,9 @@ class ExampleTask extends falkor.Task {
 
     // necessary implementation of abstract async function (entry point)
     public async run(): Promise<void> {
+        const _ = this.theme.tagger;
+        this.logger.info(`[i] Tagged template literal support ${_.scc`is here`} ${_.pth`finally`}!`);
+
         // asynchronous command-line execution
         // (command output is handled by library)
         const fetchResult = await this.exec("git fetch --all --tags" /*+ " --recurse-submodules" /**/, {
@@ -37,14 +40,14 @@ class ExampleTask extends falkor.Task {
             this.error("failed fetch");
         }
 
-        const commitResult = await this.exec("git commit", {
-            cwd: "../falkor-library",
-            // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
-            noError: [/nothing to commit, working tree clean/]
-        });
-        if (!commitResult.success) {
-            this.error("failed commit");
-        }
+        // const commitResult = await this.exec("git commit", {
+        //     cwd: "../falkor-library",
+        //     // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
+        //     noError: [/nothing to commit, working tree clean/]
+        // });
+        // if (!commitResult.success) {
+        //     this.error("failed commit");
+        // }
 
         // request input from the user
         const answer1 = await this.ask(
@@ -87,16 +90,16 @@ class ExampleTask extends falkor.Task {
             // @see LogLevel
             .info("luv' this band")
             // prompts also support internal ansi color sequence(s) - if underlying terminal does too
-            .pushPrompt(this.theme.formatTrace("nevermind"))
+            .pushPrompt(_.trc`nevermind`)
             // (level of output can be overridden in the '.ops.json' file in project root)
             // @see LogLevel
             .info(
                 // inline styling of log chunks is always done through the theme
-                this.theme.formatSuccess(
+                _.scc`${
                     // ascii is a new addition, currently it creates lists, and ascii figlet fonts
                     // (newlines are padded correctly by library, extra one added to the end for readability)
                     this.ascii.font("I'm done", "Big")
-                )
+                }`
             )
             // discard the last two demonstrational prompts
             .popPrompt(2);
