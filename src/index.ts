@@ -9,13 +9,13 @@ class ExampleTask extends falkor.Task {
             // *optional* global command-line dependencies
             {
                 // lazy shorthand syntax
-                git: "2.30.1",
+                git: "2.33.0",
                 // below dependency object is the equivalent of "11.0.1" (lazy shorthand syntax string, like above)
                 // this is *exactly* how the library unfolds shorthand dependencies
                 // @see TaskRunner::mergeDependencies
                 "clang++": {
                     command: "clang++ --version",
-                    minVersion: "11.0.1",
+                    minVersion: "12.0.0",
                     versionMatch: /version\s*([^\s]+)/
                 }
             }
@@ -93,11 +93,11 @@ class ExampleTask extends falkor.Task {
             // (level of output can be overridden in the '.ops.json' file in project root)
             .info(
                 // inline styling of log chunks is always done through the theme
-                _.scs`${
+                this.theme.formatSuccess(
                     // ascii is a new addition, currently it creates lists, and ascii figlet fonts
                     // (newlines are padded correctly by library, extra one added to the end for readability)
                     this.ascii.font("I'm done", "Big")
-                }`
+                )
             )
             // discard the last two demonstrational prompts
             .popPrompt(2);
