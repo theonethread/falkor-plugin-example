@@ -102,6 +102,15 @@ class ExampleTask extends falkor.Task {
             // discard the last two demonstrational prompts
             .popPrompt(2);
     }
+
+    // optional *synchronous* error & abort handler
+    public cancel(isAbort: boolean): void {
+        this.logger.info(
+            `${this.theme.formatTask(this.id)} executing cancel method ${
+                isAbort ? this.theme.formatTrace("(abort)") : ""
+            }`
+        );
+    }
 }
 
 export default new ExampleTask();
