@@ -45,7 +45,7 @@
     "start": "falkor-commander"
   },
   "devDependencies": {
-    "@types/node": "14.17.27",
+    "@types/node": "14.17.29",
     "@types/shelljs": "0.8.9",
     "@types/semver": "7.3.9",
     "@types/figlet": "1.5.4",
