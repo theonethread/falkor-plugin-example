@@ -106,9 +106,9 @@ class ExampleTask extends falkor.Task {
     // optional *synchronous* error & abort handler
     public cancel(isAbort: boolean): void {
         this.logger.info(
-            `${this.theme.formatTask(this.id)} executing cancel method ${
-                isAbort ? this.theme.formatTrace("(abort)") : ""
-            }`
+            `${this.theme.formatTask(this.id)} executing cancel method ${this.theme.formatTrace(
+                isAbort ? "(abort)" : "(error)"
+            )}`
         );
     }
 }
