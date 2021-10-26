@@ -42,7 +42,7 @@
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
     "prepublishOnly": "npm ci && npm run release",
-    "start": "falkor-commander"
+    "start": "falkor-commander || (echo Insufficient environment to test plugin, to install optional development dependency run 'npm install falkor-commander'. && exit 1)"
   },
   "devDependencies": {
     "@types/node": "14.17.29",
@@ -50,8 +50,7 @@
     "@types/semver": "7.3.9",
     "@types/figlet": "1.5.4",
     "rimraf": "3.0.2",
-    "@falkor/falkor-bundler": "1.1.4",
-    "@falkor/falkor-commander": "1.0.0-beta.0"
+    "@falkor/falkor-bundler": "1.1.4"
   },
   "dependencies": {
     "@falkor/falkor-library": "1.0.0-beta.3"
