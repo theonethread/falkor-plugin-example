@@ -4,6 +4,33 @@
 // Work In Progress
 ```
 
+Example [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") plugin to demonstrate framework capabilities, and to serve as boilerplate for personal projects.
+
+## **Usage**
+
+Clone the repository, then run the following commands:
+
+```
+$ npm install
+$ npm run release
+```
+
+[`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") is a peer dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` in progress.
+
+```
+$ npm install --no-save "@falkor/falkor-commander"
+$ npm start
+```
+
+## **Plugin Requirements**
+
+* Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
+* Currently `falkor-commander` searches for plugins under the `@falkor` scope (with module resolution similar to Node.js).
+* Valid plugins' `package.json` must contain the keyword `@falkor-plugin`.
+* Valid plugins' default exports should de one single-, or an array of `falkor.Task` instance(s).
+
+> _**SEE:** [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/develop/package.json "Open") and [`index.ts`](https://github.com/theonethread/falkor-plugin-example/blob/develop/src/index.ts "Open") for further reference._
+
 ## **Further Development**
 
 The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. You can run:
