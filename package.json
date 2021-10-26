@@ -41,7 +41,7 @@
   "scripts": {
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
-    "prepublishOnly": "npm run release",
+    "prepublishOnly": "npm ci && npm run release",
     "start": "falkor-commander"
   },
   "devDependencies": {
