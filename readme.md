@@ -22,12 +22,6 @@ $ npm install --no-save "@falkor/falkor-commander"
 $ npm start
 ```
 
-## **Demonstration**
-
-Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Visit") demonstrating the above workflow:
-
-[![First Demonstration](https://img.youtube.com/vi/Spny53X3I7M/0.jpg)]((https://www.youtube.com/watch?v=Spny53X3I7M "Visit")
-
 ## **Plugin Requirements**
 
 * Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
@@ -36,6 +30,12 @@ Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Vi
 * Valid plugins' default exports should de one single -, or an array of `falkor.Task` instance(s).
 
 > _**SEE:** [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/develop/package.json "Open") and [`index.ts`](https://github.com/theonethread/falkor-plugin-example/blob/develop/src/index.ts "Open") for further reference._
+
+## **Demonstration**
+
+Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Visit") demonstrating the above workflow:
+
+[![First Demonstration](https://img.youtube.com/vi/Spny53X3I7M/0.jpg)]((https://www.youtube.com/watch?v=Spny53X3I7M "Visit")
 
 ## **Further Development**
 
