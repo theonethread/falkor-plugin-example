@@ -27,7 +27,7 @@ $ npm start
 * Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
 * Currently `falkor-commander` searches for plugins under the `@falkor` scope (with module resolution similar to Node.js').
 * Valid plugins' `package.json` must contain the keyword `@falkor-plugin`.
-* Valid plugins' default exports should de one single-, or an array of `falkor.Task` instance(s).
+* Valid plugins' default exports should de one single -, or an array of `falkor.Task` instance(s).
 
 > _**SEE:** [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/develop/package.json "Open") and [`index.ts`](https://github.com/theonethread/falkor-plugin-example/blob/develop/src/index.ts "Open") for further reference._
 
