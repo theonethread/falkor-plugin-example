@@ -42,7 +42,7 @@
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
     "prepublishOnly": "npm ci && npm run release",
-    "start": "falkor-commander || (echo Insufficient environment to test plugin, to install optional development dependency run 'npm install falkor-commander'. && exit 1)"
+    "start": "falkor-commander"
   },
   "devDependencies": {
     "@types/node": "14.17.29",
