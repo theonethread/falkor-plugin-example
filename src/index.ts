@@ -10,7 +10,7 @@ class ExampleTask extends falkor.Task {
             {
                 // lazy shorthand syntax
                 git: "2.33.0",
-                // below dependency object is the equivalent of "11.0.1" (lazy shorthand syntax string, like above)
+                // below dependency object is the equivalent of "12.0.0" (lazy shorthand syntax string, like above)
                 // this is *exactly* how the library unfolds shorthand dependencies
                 // @see TaskRunner::mergeDependencies
                 "clang++": {
