@@ -43,7 +43,7 @@ class ExampleTask extends falkor.Task {
         const commitResult = await this.exec("git commit", {
             cwd: "../falkor-library",
             // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
-            noError: [/nothing to commit, working tree clean/]
+            noError: [/nothing to commit, working tree clean/, /no changes added to commit/]
         });
         if (!commitResult.success) {
             this.error("failed commit");
