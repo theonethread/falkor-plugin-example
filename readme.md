@@ -22,6 +22,12 @@ $ npm install --no-save "@falkor/falkor-commander"
 $ npm start
 ```
 
+To pass positional arguments to `falkor-commander` using the `npm start` script, one has to use the double dash POSIX separator twice (since first occurrence will be consumed by `npm` itself while parsing arguments):
+
+```
+$ npm start -- -- 1 2
+```
+
 ## **Plugin Requirements**
 
 * Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
