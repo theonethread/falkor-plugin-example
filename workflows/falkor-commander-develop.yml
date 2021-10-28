@@ -1,0 +1,42 @@
+name: Falkor CI - Develop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 3 * * *" # 3:40am UTC
+
+jobs:
+  CId:
+    name: Develop CI Suite
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: GitHub Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install Npm Dependencies
+        run: |-
+          npm ci --ignore-scripts
+
+      - name: Bundle Project
+        run: |-
+          npm run release
+
+      - name: Install Commander Locally
+        run: |-
+          npm install --no-save @falkor/falkor-commander
+
+      - name: DevTest Plugin
+        run: |-
+          npm start -- -- 1 2
