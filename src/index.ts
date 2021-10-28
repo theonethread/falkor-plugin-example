@@ -9,7 +9,8 @@ class ExampleTask extends falkor.Task {
             // *optional* global command-line dependencies
             {
                 // lazy shorthand syntax
-                git: "2.33.0",
+                git: "2.33.0"
+                /*,
                 // below dependency object is the equivalent of "12.0.0" (lazy shorthand syntax string, like above)
                 // this is *exactly* how the library unfolds shorthand dependencies
                 // @see TaskRunner::mergeDependencies
@@ -18,6 +19,7 @@ class ExampleTask extends falkor.Task {
                     minVersion: "12.0.0",
                     versionMatch: /version\s*([^\s]+)/
                 }
+                */
             }
         );
     }
@@ -29,10 +31,13 @@ class ExampleTask extends falkor.Task {
 
         // asynchronous command-line execution
         // (command output is handled by library)
-        const fetchResult = await this.exec("git fetch --all --tags" /*+ " --recurse-submodules" /**/, {
-            // current working directory for command
-            cwd: "../falkor-library"
-        });
+        const fetchResult = await this.exec(
+            "git fetch --all --tags"
+            /*, {
+                // current working directory for command
+                cwd: "../falkor-library"
+            }*/
+        );
         // the library does not throw errors (apart in setup stage), once running it only reports failure(s)
         if (!fetchResult.success) {
             // built in method, that *throws* library acceptable error
@@ -40,6 +45,7 @@ class ExampleTask extends falkor.Task {
             this.error("failed fetch");
         }
 
+        /*
         const commitResult = await this.exec("git commit", {
             cwd: "../falkor-library",
             // exceptions are silenced, when output is tested positive for any of these *optional* regular expressions
@@ -48,6 +54,7 @@ class ExampleTask extends falkor.Task {
         if (!commitResult.success) {
             this.error("failed commit");
         }
+        */
 
         // request input from the user
         const answer1 = await this.ask(
