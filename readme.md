@@ -45,9 +45,10 @@ Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Vi
 
 ## **Further Development**
 
-The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. You can run:
+The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. One can use the commands in the root directory:
 
 ```
+$ npm install
 $ npm run [ debug | release ]
 ```
 
