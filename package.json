@@ -25,6 +25,7 @@
     "plugin",
     "example",
     "task",
+    "demonstration",
     "@falkor-plugin"
   ],
   "type": "module",
