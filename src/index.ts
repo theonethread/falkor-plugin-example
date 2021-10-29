@@ -25,7 +25,7 @@ class ExampleTask extends falkor.Task {
     }
 
     // necessary implementation of abstract async function (entry point)
-    // NOTE: unused argument is a parsed minimist CLI argument object
+    // NOTE: unused argument is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
     public async run(_?: { [key: string]: string }): Promise<void> {
         const T = this.theme.tagger;
         this.logger.info(`[i] Tagged template literal support ${T.scs`is here`} ${T.pth`finally`}!`);
