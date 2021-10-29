@@ -31,9 +31,11 @@ $ npm start -- -- 1 2
 ## **Plugin Requirements**
 
 * Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
-* Currently `falkor-commander` searches for plugins under the `@falkor` scope (with module resolution similar to Node.js').
-* Valid plugins' `package.json` must contain the keyword `@falkor-plugin`.
 * Valid plugins' default exports should be one single -, or an array of `falkor.Task` instance(s).
+* Currently `falkor-commander` searches for plugins under the `@falkor` scope by default (with module resolution similar to Node.js').
+    * This can be customized running `falkor-commander` with the `-s` or `--scope` argument.
+* Valid plugins' `package.json` must contain the keyword `@falkor-plugin` by default.
+    * This can be customized running `falkor-commander`  with the `-k` or `--keyword` argument.
 
 > _**SEE:** [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/develop/package.json "Open") and [`index.ts`](https://github.com/theonethread/falkor-plugin-example/blob/develop/src/index.ts "Open") for further reference._
 
