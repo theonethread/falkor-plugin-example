@@ -25,7 +25,7 @@ class ExampleTask extends falkor.Task {
     }
 
     // necessary implementation of abstract async function (entry point)
-    public async run(): Promise<void> {
+    public async run(argv?: { [key: string]: string }): Promise<void> {
         const _ = this.theme.tagger;
         this.logger.info(`[i] Tagged template literal support ${_.scs`is here`} ${_.pth`finally`}!`);
 
