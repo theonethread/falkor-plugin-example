@@ -15,14 +15,14 @@ $ npm install
 $ npm run release
 ```
 
-The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") is a peer dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
+The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") module is a peer dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
 
 ```
 $ npm install --no-save "@falkor/falkor-commander"
 $ npm start
 ```
 
-To pass positional arguments to `falkor-commander` using the `npm start` script, one has to use the double dash POSIX separator twice (since first occurrence will be consumed by `npm` itself while parsing arguments):
+> _**NOTE:** To pass positional arguments to `falkor-commander` using the above `npm start` script, one has to use the double dash POSIX separator twice (since first occurrence will be consumed by `npm` itself while parsing arguments):_
 
 ```
 $ npm start -- -- 1 2
