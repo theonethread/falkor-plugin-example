@@ -25,9 +25,10 @@ class ExampleTask extends falkor.Task {
     }
 
     // necessary implementation of abstract async function (entry point)
-    public async run(argv?: { [key: string]: string }): Promise<void> {
-        const _ = this.theme.tagger;
-        this.logger.info(`[i] Tagged template literal support ${_.scs`is here`} ${_.pth`finally`}!`);
+    // NOTE: unused argument is a parsed minimist CLI argument object
+    public async run(_?: { [key: string]: string }): Promise<void> {
+        const T = this.theme.tagger;
+        this.logger.info(`[i] Tagged template literal support ${T.scs`is here`} ${T.pth`finally`}!`);
 
         // asynchronous command-line execution
         // (command output is handled by library)
@@ -96,7 +97,7 @@ class ExampleTask extends falkor.Task {
             // debug(), notice(), info(), warning(), error(), fatal()
             .info("luv' this band")
             // prompts also support internal ansi color sequence(s) - if underlying terminal does too
-            .pushPrompt(_.trc`nevermind`)
+            .pushPrompt(T.trc`nevermind`)
             // (level of output can be overridden in the '.ops.json' file in project root)
             .info(
                 // inline styling of log chunks is always done through the theme
