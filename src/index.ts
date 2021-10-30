@@ -43,7 +43,7 @@ class ExampleTask extends falkor.Task {
                 cwd: "../falkor-library"
             }*/
         );
-        // the library does not throw errors (apart in setup stage), once running it only reports failure(s)
+        // the library does not throw errors (apart in setup stage), once running tasks it only reports failure(s)
         if (!fetchResult.success) {
             // built in method, that *throws* library acceptable error
             // (reducing state to PANIC, allowing task level synchronous clean-up, then exiting with non-zero exit code)
