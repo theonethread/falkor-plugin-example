@@ -26,9 +26,13 @@ class ExampleTask extends falkor.Task {
 
     // necessary implementation of abstract async function (entry point)
     // NOTE: unused argument is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
-    public async run(_?: { [key: string]: string }): Promise<void> {
+    public async run(argv?: { [key: string]: string }): Promise<void> {
+        // template literal tags can also be used to format messages since v1.0.0-beta.3
         const T = this.theme.tagger;
-        this.logger.info(`[i] Tagged template literal support ${T.scs`is here`} ${T.pth`finally`}!`);
+        this.logger.info(`[!] Tagged ${T.scs`template literal`} ${T.pth`support`}!`);
+
+        // CLI arguments can be passed to plugins since v1.0.0-beta.5
+        this.logger.info(`CLI arguments for plugin: ${JSON.stringify(argv)}`);
 
         // asynchronous command-line execution
         // (command output is handled by library)
