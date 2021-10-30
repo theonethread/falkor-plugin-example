@@ -25,13 +25,13 @@ class ExampleTask extends falkor.Task {
     }
 
     // necessary implementation of abstract async function (entry point)
-    // NOTE: unused argument is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
     public async run(argv?: { [key: string]: string }): Promise<void> {
         // template literal tags can also be used to format messages since v1.0.0-beta.3
         const T = this.theme.tagger;
         this.logger.info(`[!] Tagged ${T.scs`template literal`} ${T.pth`support`}!`);
 
-        // CLI arguments can be passed to plugins since v1.0.0-beta.5
+        // CLI arguments can be passed to individual plugins since v1.0.0-beta.5
+        // argv is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
         this.logger.info(`CLI arguments for plugin: ${JSON.stringify(argv)}`);
 
         // asynchronous command-line execution
@@ -46,7 +46,7 @@ class ExampleTask extends falkor.Task {
         // the library does not throw errors (apart in setup stage), once running it only reports failure(s)
         if (!fetchResult.success) {
             // built in method, that *throws* library acceptable error
-            // (reducing state to PANIC, allowing task level clean-up, then exiting with non-zero exit code)
+            // (reducing state to PANIC, allowing task level synchronous clean-up, then exiting with non-zero exit code)
             this.error("failed fetch");
         }
 
