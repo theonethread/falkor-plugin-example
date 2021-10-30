@@ -1,7 +1,7 @@
-import falkor from "@falkor/falkor-library";
+import { Task } from "@falkor/falkor-library";
 
 // extend Task
-class ExampleTask extends falkor.Task {
+class ExampleTask extends Task {
     constructor() {
         super(
             // name of the current sequence batch
@@ -32,7 +32,7 @@ class ExampleTask extends falkor.Task {
 
         // CLI arguments can be passed to individual plugins since v1.0.0-beta.5
         // argv is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
-        this.logger.info(`CLI arguments for plugin: ${JSON.stringify(argv)}`);
+        this.logger.info(`[!] CLI arguments for plugin: ${this.theme.formatPath(JSON.stringify(argv))}`);
 
         // asynchronous command-line execution
         // (command output is handled by library)
