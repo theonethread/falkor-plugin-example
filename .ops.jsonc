@@ -1,0 +1,22 @@
+{
+  "terminal": {
+    "ansi": true,
+    "animation": true
+  },
+  "logger": {
+    "level": 0,
+    "timestamp": true
+  },
+  "brand": {
+    "fancy": true,
+    "quote": true
+  },
+  "theme": {},
+  // configurations for individual tasks
+  "taskConfigurations": {
+    "Task Example": {
+      "key": "value",
+      "arr": [1, 2, 3]
+    }
+  }
+}
