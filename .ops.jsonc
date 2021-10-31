@@ -1,17 +1,60 @@
 {
   "terminal": {
+    // use ANSI escape sequences
     "ansi": true,
+    // use animation when streaming commands, or fetching
     "animation": true
   },
   "logger": {
+    // log level:
+    // 0: DEBUG
+    // 1: NOTICE
+    // 2: INFO
+    // 3: WARNING
+    // 4: ERROR
+    // 5: FATAL
     "level": 0,
+    // prefix logs with timestamp
     "timestamp": true
   },
   "brand": {
+    // use ASCII art brand
     "fancy": true,
+    // name of Figlet font to use
+    "font": "Graffiti",
+    // display Star Trek quote
     "quote": true
   },
-  "theme": {},
+  "theme": {
+    // brand
+    "brand": "#98f",
+    // severity
+    "debug": "#0aa",
+    "notice": "#888",
+    "info": "#999",
+    "warning": "#a00",
+    "error": "#f77",
+    "fatal": "#f00",
+    // inline
+    "trace": "#555",
+    "path": "#54d",
+    "command": "#a0a",
+    "bullet": "#a83",
+    // stream
+    "streamDebug": "#07a",
+    "streamNotice": "#888",
+    "streamInfo": "#999",
+    "streamWarning": "#a00",
+    "streamError": "#f77",
+    "streamFatal": "#f00",
+    // interaction
+    "question": "#fb0",
+    "selection": "#045",
+    // task
+    "task": "#59f",
+    "success": "#182",
+    "failure": "#715"
+  },
   // configurations for individual tasks
   "taskConfigurations": {
     "Task Example": {
