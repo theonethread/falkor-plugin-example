@@ -57,12 +57,12 @@
     "@types/semver": "7.3.9",
     "@types/figlet": "1.5.4",
     "rimraf": "3.0.2",
-    "@falkor/falkor-bundler": "1.1.5"
+    "@falkor/falkor-bundler": "1.1.6"
   },
   "dependencies": {
-    "@falkor/falkor-library": "1.0.0-beta.4"
+    "@falkor/falkor-library": "1.0.0-beta.5"
   },
   "peerDependencies": {
-    "@falkor/falkor-commander": "1.0.0-beta.1"
+    "@falkor/falkor-commander": "1.0.0-beta.2"
   }
 }
