@@ -55,8 +55,13 @@
     "success": "#182",
     "failure": "#715"
   },
+  // commander configuration
+  "commander": {
+    "scope": "@falkor",
+    "keyword": "@falkor-plugin"
+  },
   // configurations for individual tasks
-  "taskConfigurations": {
+  "tasks": {
     "Task Example": {
       "key": "value",
       "arr": [1, 2, 3]
