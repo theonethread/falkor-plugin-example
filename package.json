@@ -2,6 +2,7 @@
   "name": "@falkor/falkor-plugin-example",
   "version": "1.0.0-beta.0",
   "description": "Falkor Commander plugin to demonstrate framework capabilities",
+  "private": true,
   "author": {
     "name": "Barnabas Bucsy",
     "url": "https://github.com/theonethread"
@@ -13,9 +14,9 @@
     }
   ],
   "license": "MIT",
-  "private": true,
-  "repository": "github:theonethread/falkor-plugin-example",
   "homepage": "https://falkor.world/",
+  "repository": "github:theonethread/falkor-plugin-example",
+  "bugs": "https://github.com/theonethread/falkor-plugin-example/issues",
   "funding": {
     "type": "individual",
     "url": "https://www.linkedin.com/in/barnabas-bucsy"
@@ -35,6 +36,11 @@
   "files": [
     ".dist"
   ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
   "engines": {
     "node": ">=14",
     "npm": ">=6"
@@ -46,7 +52,7 @@
     "start": "falkor-commander"
   },
   "devDependencies": {
-    "@types/node": "14.17.29",
+    "@types/node": "14.17.32",
     "@types/shelljs": "0.8.9",
     "@types/semver": "7.3.9",
     "@types/figlet": "1.5.4",
