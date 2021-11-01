@@ -17,10 +17,16 @@
   "homepage": "https://falkor.world/",
   "repository": "github:theonethread/falkor-plugin-example",
   "bugs": "https://github.com/theonethread/falkor-plugin-example/issues",
-  "funding": {
-    "type": "individual",
-    "url": "https://www.linkedin.com/in/barnabas-bucsy"
-  },
+  "funding": [
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/falkor_framework"
+    },
+    {
+      "type": "individual",
+      "url": "https://www.linkedin.com/in/barnabas-bucsy"
+    }
+  ],
   "keywords": [
     "falkor",
     "plugin",
