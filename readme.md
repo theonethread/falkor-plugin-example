@@ -28,7 +28,7 @@ $ npm start
 $ npm start -- -- 1 2
 ```
 
-## **Configuration**
+### **Configuration**
 
 The [`@falkor/falkor-library`](https://www.npmjs.com/package/@falkor/falkor-library "Visit") looks for shared configurations in the Current Working Directory from where `falkor-commander` was executed (files could be named `.falkorrc`, `.ops.json`, `.ops.jsonc`, `falkor.json`, or `falkor.jsonc` - whichever is found first).
 
