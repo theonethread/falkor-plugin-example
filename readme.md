@@ -32,7 +32,7 @@ $ npm start -- -- 1 2
 
 The [`@falkor/falkor-library`](https://www.npmjs.com/package/@falkor/falkor-library "Visit") looks for shared configurations in the Current Working Directory from where `falkor-commander` was executed (files could be named `.falkorrc`, `.ops.json`, `.ops.jsonc`, `falkor.json`, or `falkor.jsonc` - whichever is found first).
 
-To see all available settings, and example plugin customizations check out the big [`.ops.jsonc` file](https://github.com/theonethread/falkor-plugin-example/blob/develop/.ops.jsonc "Open") provided as example.
+To see all available settings, and example plugin customizations check out the big [`.ops.jsonc`](https://github.com/theonethread/falkor-plugin-example/blob/develop/.ops.jsonc "Open") file provided as example.
 
 ## **Demonstration**
 
