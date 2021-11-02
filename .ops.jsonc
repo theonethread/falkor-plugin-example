@@ -2,7 +2,7 @@
   "terminal": {
     // use ANSI escape sequences
     "ansi": true,
-    // use animation when streaming commands, or fetching
+    // use animation when streaming commands, or fetching (requires 'ansi' set to 'true')
     "animation": true
   },
   "logger": {
@@ -20,7 +20,7 @@
   "brand": {
     // use ASCII art brand
     "fancy": true,
-    // name of Figlet font to use
+    // name of Figlet font to use for ASCII art brand
     "font": "Graffiti",
     // display Star Trek quote
     "quote": true
