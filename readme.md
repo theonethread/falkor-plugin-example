@@ -15,7 +15,7 @@ $ npm install
 $ npm run [ debug | release ]
 ```
 
-The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") module is a peer dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
+The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") module is an optional dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
 
 ```
 $ npm install --no-save "@falkor/falkor-commander"

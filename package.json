@@ -55,7 +55,7 @@
     "debug": "rimraf .dist/**/* && falkor-bundler --debug",
     "release": "rimraf .dist/**/* && falkor-bundler --release",
     "prepublishOnly": "npm ci && npm run release",
-    "start": "falkor-commander"
+    "start": "falkor-commander || echo Please install 'falkor commander' with the command \"npm install --no-save @falkor!falkor-commander\" to test your plugin locally!"
   },
   "devDependencies": {
     "@types/node": "14.17.32",
@@ -68,7 +68,7 @@
   "dependencies": {
     "@falkor/falkor-library": "1.0.0"
   },
-  "peerDependencies": {
+  "optionalDependencies": {
     "@falkor/falkor-commander": "1.0.0"
   }
 }
