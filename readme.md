@@ -12,7 +12,7 @@ Clone the repository, then run the following commands in the root directory:
 
 ```
 $ npm install
-$ npm run release
+$ npm run [ debug | release ]
 ```
 
 The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") module is a peer dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
@@ -32,7 +32,7 @@ $ npm start -- -- 1 2
 
 The [`@falkor/falkor-library`](https://www.npmjs.com/package/@falkor/falkor-library "Visit") looks for shared configurations in the Current Working Directory from where `falkor-commander` was executed (files could be named `.falkorrc`, `.ops.json`, `.ops.jsonc`, `falkor.json`, or `falkor.jsonc` - whichever is found first).
 
-To see all available settings, and example plugin customizations check out the big [`.ops.jsonc`](https://github.com/theonethread/falkor-plugin-example/blob/develop/.ops.jsonc "Open") file provided as example.
+To see all available settings, and example plugin customizations check out the big [`.ops.jsonc`](https://github.com/theonethread/falkor-plugin-example/blob/develop/.ops.jsonc "Open") file provided as an example.
 
 ## **Demonstration**
 
