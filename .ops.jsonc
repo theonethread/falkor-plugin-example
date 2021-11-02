@@ -25,6 +25,7 @@
     // display Star Trek quote
     "quote": true
   },
+  // can be set to 'null' to work in monochrome mode
   "theme": {
     // brand
     "brand": "#98f",
