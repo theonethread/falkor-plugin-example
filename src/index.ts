@@ -32,11 +32,11 @@ class ExampleTask extends Task {
 
         // CLI arguments can be passed to individual plugins since v1.0.0-beta.5
         // argv is a parsed minimist CLI argument object, see @falkor/falkor-commander for details
-        this.logger.info(`[!] CLI arguments for plugin: ${this.theme.formatPath(JSON.stringify(argv))}`);
+        this.logger.info(`[!] CLI arguments for plugin: ${T.pth(JSON.stringify(argv))}`);
 
         // JSON configuration can be passed to individual plugins since v1.0.0-beta.6
         // config can be set in the ops-file file, see @falkor/falkor-commander for details
-        this.logger.info(`[!] JSON config for plugin: ${this.theme.formatPath(JSON.stringify(config))}`);
+        this.logger.info(`[!] JSON config for plugin: ${T.pth(JSON.stringify(config))}`);
 
         // asynchronous command-line execution
         // (command output is handled by library)
@@ -109,13 +109,13 @@ class ExampleTask extends Task {
             // (level of output can be overridden in the '.ops.json' file in project root)
             .info(
                 // inline styling of log chunks is always done through the theme
-                this.theme.formatSuccess(
+                T.scs(
                     // ascii is a new addition, currently it creates lists, and ascii figlet fonts
                     // (newlines are padded correctly by library, extra one added to the end for readability)
                     this.ascii.font("I'm done", "Big")
                 )
             )
-            // discard the last two demonstrational prompts
+            // discard the last two demonstrational PROMPTS
             .popPrompt(2);
     }
 
