@@ -1,9 +1,5 @@
 # **Falkor Plugin Example**
 
-```javascript
-// Work In Progress
-```
-
 Example [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") plugin to demonstrate framework capabilities, and to serve as boilerplate for personal projects.
 
 ## **Usage**
