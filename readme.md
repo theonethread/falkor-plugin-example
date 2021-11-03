@@ -2,9 +2,11 @@
 
 Example [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") plugin to demonstrate framework capabilities, and to serve as boilerplate for personal projects.
 
+> _**NOTE:** The `master` branch holds compatible version with already released packages, while `development` branch holds a version currently developed along with latest unreleased sources of packages._
+
 ## **Usage**
 
-Clone the repository, then run the following commands in the root directory:
+Clone the repository's **master** branch, then run the following commands in the root directory:
 
 ```
 $ npm install
