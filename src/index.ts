@@ -104,7 +104,7 @@ class ExampleTask extends Task {
                     this.ascii.font("I'm done", "Big")
                 )
             )
-            // discard the last two demonstrational PROMPTS
+            // discard the last two demonstrational prompts
             .popPrompt(2);
     }
 
