@@ -22,10 +22,12 @@ $ npm install --no-save "@falkor/falkor-commander"
 $ npm start
 ```
 
+> _**NOTE:** Since `npm` v7 optional dependencies will also be installed when running `npm install`._
+
 > _**NOTE:** To pass arguments to a local installation of `falkor-commander` use the `npm run falkor-commander` script. One has to use the double dash POSIX separator twice (since first occurrence will be consumed by `npm` itself while parsing arguments) to pass extra positional arguments to be treated as buffered answers:_
 
 ```
-$ npm run falkor-commander -- <options>... <tasks>... -- <answers>...
+$ npm start -- <options>... <buffered-tasks>... -- <buffered-answers>...
 ```
 
 ### **Configuration**
