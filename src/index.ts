@@ -22,7 +22,7 @@ class ExampleTask extends Task {
     }
 
     // necessary implementation of abstract async function (entry point)
-    public async run(argv?: { [key: string]: string }, config?: any): Promise<void> {
+    public async run(argv?: { [key: string]: any }, config?: any): Promise<void> {
         // template literal tags can be used to format messages
         const T = this.theme.tagger;
         this.logger.info(`[!] Tagged ${T.scs`template literal`} ${T.pth`support`}!`);
