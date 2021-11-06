@@ -6,9 +6,11 @@ Example [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falko
 
 ## **Usage**
 
-Clone the repository's **master** branch, then run the following commands in the root directory:
+To clone the repository's **master** branch and compile `falkor-plugin-example` one can use the commands:
 
 ```
+$ git clone git@github.com:theonethread/falkor-plugin-example.git
+$ cd falkor-plugin-example
 $ npm install
 $ npm run [ debug | release ]
 ```
