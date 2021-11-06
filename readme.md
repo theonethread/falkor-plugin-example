@@ -64,6 +64,14 @@ $ npm install
 $ npm run [ debug | release ]
 ```
 
+> _**SEE**: `"scripts"` entry in [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/master/package.json "Open")_
+
+> _**NOTE**: Compiling the `develop` sources might need locally linked `develop` versions of downstream modules:_
+> * _[`@falkor/falkor-commander`](https://github.com/theonethread/falkor-commander/tree/develop "Visit")_
+> * _[`@falkor/falkor-library`](https://github.com/theonethread/falkor-library/tree/develop "Visit")_
+> * _[`@falkor/falkor-bundler`](https://github.com/theonethread/falkor-bundler/tree/develop "Visit")_
+> _**SEE**: [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link "Visit")_
+
 ### **Versioning and Branching Strategy**
 
 Release sources can be found on the `master` branch, this one always points to the latest tagged release. Previous sources of releases can be found using Git version tags (or browsing GitHub releases). Released packages can be found on [npmjs](https://www.npmjs.com/package/@falkor/falkor-plugin-example "Visit").
