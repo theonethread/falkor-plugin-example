@@ -58,7 +58,7 @@ Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Vi
 The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. To clone the repository and compile `falkor-plugin-example` one can use the commands:
 
 ```
-$ git clone git@github.com:theonethread/falkor-plugin-example.git
+$ git clone --branch develop git@github.com:theonethread/falkor-plugin-example.git
 $ cd falkor-plugin-example
 $ npm install
 $ npm run [ debug | release ]
