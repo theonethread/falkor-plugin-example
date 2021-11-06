@@ -2,18 +2,18 @@
 
 Example [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") plugin to demonstrate framework capabilities, and to serve as boilerplate for personal projects.
 
-> _**NOTE:** The `master` branch holds compatible version with already released packages, while the `develop` branch holds a version currently developed along with latest unreleased sources of packages._
-
 ## **Usage**
 
-To clone the repository's **master** branch and compile `falkor-plugin-example` one can use the commands:
+Clone the repository's **master** branch and compile `falkor-plugin-example`:
 
 ```
-$ git clone git@github.com:theonethread/falkor-plugin-example.git
+$ git clone --branch master git@github.com:theonethread/falkor-plugin-example.git
 $ cd falkor-plugin-example
 $ npm install
 $ npm run [ debug | release ]
 ```
+
+> _**NOTE:** The `master` branch holds compatible version with already released packages, while the `develop` branch holds a version currently developed along with latest unreleased sources of packages._
 
 The [`@falkor/falkor-commander`](https://www.npmjs.com/package/@falkor/falkor-commander "Visit") module is an optional dependency of plugins, it is not necessary to install it during development, but as a development feature one can test their work-in-progress projects running it from the root of a directory that is a `@falkor-plugin` under development:
 
@@ -55,9 +55,11 @@ Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Vi
 
 ## **Further Development**
 
-The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. One can use the commands in the root directory after cloning the repository:
+The project uses the [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") module to compile sources. To clone the repository and compile `falkor-plugin-example` one can use the commands:
 
 ```
+$ git clone git@github.com:theonethread/falkor-plugin-example.git
+$ cd falkor-plugin-example
 $ npm install
 $ npm run [ debug | release ]
 ```
