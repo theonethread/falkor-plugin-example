@@ -52,12 +52,11 @@
     "npm": ">=6"
   },
   "scripts": {
-    "debug": "rimraf .dist/**/* && falkor-bundler --debug",
-    "release": "rimraf .dist/**/* && falkor-bundler --release",
+    "debug": "rimraf .dist/**/* && falkor-bundler --debug --input src/index.ts",
+    "release": "rimraf .dist/**/* && falkor-bundler --release --input src/index.ts",
     "prepublishOnly": "npm ci && npm run release",
-    "start": "falkor-commander || echo Please install 'falkor commander' with the command 'npm install --no-save @falkor/falkor-commander' to test your plugin locally!",
-    "falkor-commander": "falkor-commander",
-    "test": "falkor-commander -- 1 1 2 2"
+    "start": "falkor-commander",
+    "test": "falkor-commander -- 1 2"
   },
   "devDependencies": {
     "@types/node": "14.17.32",
@@ -65,12 +64,12 @@
     "@types/semver": "7.3.9",
     "@types/figlet": "1.5.4",
     "rimraf": "3.0.2",
-    "@falkor/falkor-bundler": "1.1.7"
+    "@falkor/falkor-bundler": "1.1.8"
   },
   "dependencies": {
-    "@falkor/falkor-library": "1.0.0"
+    "@falkor/falkor-library": "1.1.0"
   },
   "optionalDependencies": {
-    "@falkor/falkor-commander": "1.0.0"
+    "@falkor/falkor-commander": "1.1.0"
   }
 }
