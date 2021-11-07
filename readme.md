@@ -74,6 +74,16 @@ $ npm run [ debug | release ]
 >
 > _**SEE:** [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link "Visit") for further reference._
 
+### **Linting**
+
+The project uses [`prettier`](https://www.npmjs.com/package/prettier "Visit"), to lint sources and documentation run:
+
+```
+$ npm run lint
+```
+
+> _**SEE:** [`.prettierrc`](https://github.com/theonethread/falkor-plugin-example/blob/develop/.prettierrc "Open") for further reference._
+
 ### **Versioning and Branching Strategy**
 
 Release sources can be found on the `master` branch, this one always points to the latest tagged release. Previous sources of releases can be found using Git version tags (or browsing GitHub releases). Released packages can be found on [npmjs](https://www.npmjs.com/package/@falkor/falkor-plugin-example "Visit").
