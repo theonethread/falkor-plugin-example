@@ -44,12 +44,12 @@ Have a look at our first [video](https://www.youtube.com/watch?v=Spny53X3I7M "Vi
 
 ## **Plugin Requirements**
 
-* Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
-* Valid plugins' default exports should be one single -, or an array of `falkor.Task` instance(s).
-* Currently `falkor-commander` searches for plugins under the `@falkor` scope by default (with module resolution similar to Node.js').
-    * This can be customized running `falkor-commander` with the `-s` or `--scope` argument.
-* Valid plugins' `package.json` must contain the keyword `@falkor-plugin` by default.
-    * This can be customized running `falkor-commander`  with the `-k` or `--keyword` argument.
+- Plugins should comply to [`@falkor/falkor-bundler`](https://www.npmjs.com/package/@falkor/falkor-bundler "Visit") requirements.
+- Valid plugins' default exports should be one single -, or an array of `falkor.Task` instance(s).
+- Currently `falkor-commander` searches for plugins under the `@falkor` scope by default (with module resolution similar to Node.js').
+  - This can be customized running `falkor-commander` with the `-s` or `--scope` argument.
+- Valid plugins' `package.json` must contain the keyword `@falkor-plugin` by default.
+  - This can be customized running `falkor-commander` with the `-k` or `--keyword` argument.
 
 > _**SEE:** [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/develop/package.json "Open") and [`index.ts`](https://github.com/theonethread/falkor-plugin-example/blob/develop/src/index.ts "Open") for further reference._
 
@@ -64,15 +64,15 @@ $ npm install
 $ npm run [ debug | release ]
 ```
 
-> _**SEE:** `"scripts"` entry in [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/master/package.json "Open")_
+> _**SEE:** `"scripts"` entry in [`package.json`](https://github.com/theonethread/falkor-plugin-example/blob/master/package.json "Open") for further reference._
 
 > _**NOTE:** Compiling the `develop` sources might need locally linked `develop` versions of downstream modules:_
 >
-> * _[`@falkor/falkor-commander`](https://github.com/theonethread/falkor-commander/tree/develop "Visit")_
-> * _[`@falkor/falkor-library`](https://github.com/theonethread/falkor-library/tree/develop "Visit")_
-> * _[`@falkor/falkor-bundler`](https://github.com/theonethread/falkor-bundler/tree/develop "Visit")_
+> - _[`@falkor/falkor-commander`](https://github.com/theonethread/falkor-commander/tree/develop "Visit")_
+> - _[`@falkor/falkor-library`](https://github.com/theonethread/falkor-library/tree/develop "Visit")_
+> - _[`@falkor/falkor-bundler`](https://github.com/theonethread/falkor-bundler/tree/develop "Visit")_
 >
-> _**SEE:** [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link "Visit")_
+> _**SEE:** [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link "Visit") for further reference._
 
 ### **Versioning and Branching Strategy**
 
