@@ -94,7 +94,7 @@ class ExampleTask extends Task {
             // debug(), notice(), info(), warning(), error(), fatal()
             .info("luv' this band")
             // prompts also support internal ansi color sequence(s) - if underlying terminal does too
-            .pushPrompt(T.trc`nevermind`)
+            .pushPrompt(T.trc`my girl`)
             // (level of output can be overridden in the '.ops.json' file in project root)
             .info(
                 // inline styling of log chunks is always done through the theme
