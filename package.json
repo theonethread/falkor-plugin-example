@@ -55,7 +55,7 @@
     "debug": "rimraf .dist/**/* && falkor-bundler --debug --input src/index.ts",
     "release": "rimraf .dist/**/* && falkor-bundler --release --input src/index.ts",
     "lint": "prettier --check . && cspell lint --no-progress --wordsOnly --unique --gitignore --exclude .git ** .*",
-    "prepublishOnly": "npm ci && npm run lint && npm run release",
+    "prepublishOnly": "npm ci --ignore-scripts && npm run lint && npm run release",
     "start": "falkor-commander",
     "test": "falkor-commander -- 1 2"
   },
@@ -67,7 +67,7 @@
     "rimraf": "3.0.2",
     "prettier": "2.4.1",
     "cspell": "5.13.0",
-    "@falkor/falkor-bundler": "1.1.8"
+    "@falkor/falkor-bundler": "1.1.11"
   },
   "dependencies": {
     "@falkor/falkor-library": "1.1.0"
