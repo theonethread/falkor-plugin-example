@@ -9,7 +9,7 @@ class ExampleTask extends Task {
             // *optional* global command-line dependencies
             {
                 // lazy shorthand syntax
-                git: "2.33.0"
+                git: "2.36.0"
                 // below dependency object is the equivalent of "2.33.0", this is *exactly* how the library unfolds shorthand dependencies
                 // git: {
                 //     command: "git --version",
