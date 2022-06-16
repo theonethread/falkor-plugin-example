@@ -60,19 +60,19 @@
     "test": "falkor-commander -- 1 2"
   },
   "devDependencies": {
-    "@types/node": "17.0.43",
+    "@types/node": "18.0.0",
     "@types/shelljs": "0.8.11",
-    "@types/semver": "7.3.9",
+    "@types/semver": "7.3.10",
     "@types/figlet": "1.5.4",
     "rimraf": "3.0.2",
-    "prettier": "2.7.0",
+    "prettier": "2.7.1",
     "cspell": "6.1.2",
-    "@falkor/falkor-bundler": "1.2.0"
+    "@falkor/falkor-bundler": "1.2.1"
   },
   "dependencies": {
-    "@falkor/falkor-library": "1.2.0"
+    "@falkor/falkor-library": "1.3.0"
   },
   "optionalDependencies": {
-    "@falkor/falkor-commander": "1.2.0"
+    "@falkor/falkor-commander": "1.3.0"
   }
 }
