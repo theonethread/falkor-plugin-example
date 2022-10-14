@@ -60,7 +60,7 @@
     "test": "falkor-commander -- 1 2"
   },
   "devDependencies": {
-    "@types/node": "18.8.0",
+    "@types/node": "18.8.5",
     "@types/shelljs": "0.8.11",
     "@types/semver": "7.3.12",
     "@types/figlet": "1.5.5",
