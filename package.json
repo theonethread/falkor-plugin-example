@@ -61,13 +61,13 @@
     "test": "falkor-commander -- 1 2"
   },
   "devDependencies": {
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.10",
     "@types/shelljs": "0.8.11",
     "@types/semver": "7.3.13",
     "@types/figlet": "1.5.5",
-    "rimraf": "4.4.0",
-    "prettier": "2.8.4",
-    "cspell": "6.29.3",
+    "rimraf": "4.4.1",
+    "prettier": "2.8.7",
+    "cspell": "6.31.1",
     "@falkor/falkor-bundler": "1.2.3"
   },
   "dependencies": {
